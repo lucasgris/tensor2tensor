@@ -35,6 +35,8 @@ from tensor2tensor.utils import contrib
 from tensor2tensor.utils import expert_utils
 
 import tensorflow.compat.v1 as tf
+tf.to_float = lambda x: tf.cast(x, tf.float32)
+
 import tensorflow_probability as tfp
 
 # pylint: disable=g-direct-tensorflow-import
